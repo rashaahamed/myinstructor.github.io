@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <title>JavaScript</title>
+    <style>
+      * { font-family: "Nunito Sans", sans-serif; }
+      h2 {
+        margin-top: 60px;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      p { margin-top: 10px; }
+
+      #output {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="output"></div>
+
+    <script>
+      window.onload = function() {
+        loadInfo();
+      }
+
+      window.onresize = function() {
+        loadInfo();
+      }
+
+      function loadInfo() {
+        var output = document.getElementById("output");
+        output.innerHTML = '';
+
+        var window_w = window.innerWidth;
+        var window_h = window.innerHeight;
+
+        var x = event.clientX;
+        var y = event.clientY;
+
+        // console.log(event);
+
+        output.innerHTML = 'Window inner width: ' + window_w + '<br>';
+        output.innerHTML += 'Window inner height: ' + window_h + '<br>';
+        output.innerHTML += 'X: ' + x + ' | Y ' + y;
+      }
+
+    </script>
+  </body>
+</html>

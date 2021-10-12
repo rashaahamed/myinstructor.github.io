@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import "base.css";
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Table                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+table {
+  margin-top: 70px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table tr .td-1 {
+  width: 5%;
+}
+
+table tr .td-2 {
+  width: 42%;
+}
+
+table tr .td-3 {
+  width: 28%;
+}
+
+table tr .td-4 {
+  width: 20%;
+}
+
+table tr .td-5 {
+  width: 5%;
+}
+
+table tr .td-1 input {
+  color: #0fb28a;
+}
+
+table tr {
+  border-bottom: .1rem solid #e6e7ee;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  text-align: right;
+}
+
+table tr th {
+  padding: 13px 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  cursor: default;
+}
+
+table tr td {
+  padding: 13px 0;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: default;
+}
+
+table tr td:first-child,
+table tr td:last-child {
+  padding: 0 1.6rem 0 1.6rem;
+}
+
+table td a i {
+  position: relative;
+  top: 0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+table tr th {
+  color: #606060;
+}
+
+a i {
+  color: #039be5;
+  cursor: pointer;
+}
+
+table td a i:hover {
+  color: #038ed2;
+}

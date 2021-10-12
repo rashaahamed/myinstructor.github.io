@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web development | Form</title>
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/form.css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="container flexbox">
+          <div class="title">
+            <h1>Form</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="https://github.com/myinstructor" target="_blank">GitHub</a></li>
+              <li><a href="https://gitlab.com/andrespecht" target="_blank">GitLab</a></li>
+              <li><a href="https://andrespecht.com/" target="_blank">About me</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+        <div class="form">
+          <h2>Registration form</h2>
+          <p>Fields with * are required</p>
+          <form method="post" action="#" name="registration">
+             <input type="text" name="first_name" placeholder="First name *" required>
+             <input type="text" name="last_name" placeholder="Last name *" required>
+             <input type="text" name="age" placeholder="Age" required>
+             <input type="email" name="email" placeholder="Email (abc@mail.com) *" required>
+             <input type="tel" name="phone" placeholder="Phone (123-456-7890) *" required>
+             <input type="text" name="postal_code" placeholder="Postal code (A1B 2C3) *" required>
+             <div class="buttons">
+               <input type="reset" value="Clear">
+               <input type="Submit" value="Submit">
+             </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="logo"></div>
+  </body>
+</html>

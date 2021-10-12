@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Base                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-shadow: none;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  transition: all .2s ease-in-out;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container:after, .column:after, .row:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+h1, h2, div, p {
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12rem;
+  height: 12rem;
+  background: transparent url("logo.png") no-repeat center center;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Elements                                             */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.top {
+  height: 8rem;
+}
+
+.center {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: calc(100vh - 8rem - 8rem);
+  font-size: 100%;
+  text-align: left;
+  cursor: default;
+}
+
+.cover-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.content {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.bottom {
+  height: 8rem;
+  cursor: default;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Cover                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#title {
+  margin-top: 0;
+  margin-left: -.4rem;
+  line-height: .9;
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -2px;
+}
+
+hr {
+  margin-top: 3.2rem;
+  margin-left: 0rem;
+  width: 6rem;
+  height: .4rem;
+  background-color: #038ed2;
+}
+
+#author {
+  margin-top: 3rem;
+  margin-left: 0rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -.2px;
+}
+
+#profile {
+  margin-top: .2rem;
+  margin-left: 0rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #757575;
+  letter-spacing: -.1px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Content                                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.heading {
+  margin-left: -.2rem;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: .8;
+  letter-spacing: -.4px;
+}
+
+.paragraph, .quote {
+  margin-left: -.15rem;
+  margin-top: 3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -.2px;
+}
+
+.paragraph + .paragraph {
+  margin-top: 2.4rem;
+}
+
+.quote + .paragraph {
+  margin-top: 4.4rem;
+}
+
+.quote {
+  text-align: left;
+}
+
+.exercise {
+   margin-top: 6.3rem;
+   margin-left: -.15rem;
+   font-size: 2.4rem;
+   font-weight: 500;
+   line-height: 1.4;
+   letter-spacing: -.04rem;
+}
+
+.code {
+  margin-top: 0;
+  font-family: Menlo, monospace;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.tag {
+  font-family: Menlo, monospace;
+  font-size: 2rem;
+}
+
+strong {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -.04rem;
+  color: #038ed2;
+}
+
+a {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -.04rem;
+  color: #039be5;
+}
+
+.flex-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+figure {
+  width: 100%;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+}
+
+.vertical {
+  width: auto;
+  height: auto;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Padding                                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.pad-2 {
+  padding: 2rem;
+}
+
+.pad-4 {
+  padding: 4rem;
+}
+
+.pad-6 {
+  padding: 6rem;
+}
+
+.pad-8 {
+  padding: 8rem;
+}
+
+.pad-10 {
+  padding: 10rem;
+}
+
+.pad-12 {
+  padding: 12rem;
+}
+
+.pad-14 {
+  padding: 14rem;
+}
+
+.pad-16 {
+  padding: 16rem;
+}
+
+.pad-18 {
+  padding: 18rem;
+}
+
+.pad-20 {
+  padding: 20rem;
+}
+
+.pad-22 {
+  padding: 22rem;
+}
+
+.pad-24 {
+  padding: 24rem;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Slides                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.number-align {
+  height: 9rem;
+  text-align: right;
+  overflow: hidden;
+}
+
+.page-number {
+  line-height: .8;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #858585;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Grid                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media screen and (max-width: 959px) {
+  #page { display: none; }
+  #logo { display: block; }
+}
+
+
+@media screen and (min-width: 960px) {
+  #logo { display: none; }
+  .container { width: 90%; }
+  .column:first-child { margin-left: 0; }
+  .twelve.column { width: 100%; margin-left: 0; }
+}

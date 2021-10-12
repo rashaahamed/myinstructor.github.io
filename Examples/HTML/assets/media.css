@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "base.css";
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Media                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.img, .video, .audio, .youtube {
+  margin-top: 60px;
+  width: 600px;
+}
+
+figure, video, audio, iframe {
+  margin-top: 10px;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.space {
+  height: 120px;
+}

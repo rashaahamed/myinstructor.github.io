@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Base                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: "Nunito sans", sans-serif;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Container                                            */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Header                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header {
+  background-color: #00945f;
+}
+
+.flex {
+  display: flex;
+}
+
+.title {
+  height: 56px;
+  width: 40%;
+}
+
+.title h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 56px;
+}
+
+nav {
+  width: 60%;
+  text-align: right;
+  height: 56px;
+}
+
+nav ul {
+  line-style: none;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 56px;
+  cursor: default;
+}
+
+nav ul li + li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Media                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+h2 {
+  margin-top: 50px;
+}
+
+figure, video, audio {
+  margin-top: 25px;
+}
+
+img, video, audio {
+  width: 70%;
+}

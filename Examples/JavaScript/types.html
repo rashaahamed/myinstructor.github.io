@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/base.css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
+    <title>Web development | JavaScript</title>
+    <style type="text/css">
+      * { font-family: 'Nunito Sans', sans-serif; }
+      h2 {
+        margin-top: 60px;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      p { margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container flexbox">
+        <div class="title">
+          <h1>JavaScript</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://github.com/myinstructor" target="_blank">GitHub</a></li>
+            <li><a href="https://gitlab.com/andrespecht" target="_blank">GitLab</a></li>
+            <li><a href="https://andrespecht.com/" target="_blank">About me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h2>Check your console logs to see the results</h2>
+      <p>Right-click -> "Inspect" -> "Console"
+
+      <script>
+        /*
+          JS types: string, number, boolean, object, function,
+          symbol, undefined and null
+        */
+        var string = "Hello world";
+        var number_1 = 123;
+        var number_2 = 456;
+        var bool = false;
+        var array = [3, 5, 7, 9, 4, 8];
+
+        var message1 = undefined;
+        // undefined by default
+        var message2;
+        console.log(message1);
+        console.log(message2);
+
+        var result = "";
+        for (let i = 0; i < array.length; i++) {
+          console.log(array[i]);
+        }
+
+        var obj = {
+          firstName: "John",
+          lastName: "Doe",
+          age:50
+        };
+        console.log(obj);
+
+        var new_obj = new Object();
+        new_obj.firstName = "Marie";
+        new_obj.lastName = "Jones";
+        console.log(new_obj);
+
+        console.log(number_1 + number_2 + string);
+        console.log(string + number_1 + number_2);
+      </script>
+    </div>
+  </body>
+</html>

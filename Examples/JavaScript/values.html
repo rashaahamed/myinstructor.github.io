@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/base.css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
+    <title>Web development | JavaScript</title>
+    <style type="text/css">
+      * { font-family: 'Nunito Sans', sans-serif; }
+      h2 {
+        margin-top: 60px;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      p { margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container flexbox">
+        <div class="title">
+          <h1>JavaScript</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://github.com/myinstructor" target="_blank">GitHub</a></li>
+            <li><a href="https://gitlab.com/andrespecht" target="_blank">GitLab</a></li>
+            <li><a href="https://andrespecht.com/" target="_blank">About me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h2>Check your console logs to see the results</h2>
+      <p>Right-click -> "Inspect" -> "Console"
+
+      <script>
+        /*
+          Truthy values: '0' (a string containing a single zero),
+          'false' (a string containing the text “false”), [] (an empty
+          array), {} (an empty object), function(){} (an “empty” function)
+
+          Falsy values: false, 0, '' or "" (empty string),
+          null, undefined, NaN (Not a Number)
+        */
+
+        var a = 0;
+        var b = '0';
+        var c = undefined;
+        var d = [];
+        var e = '';
+
+        if (a) { console.log('a') }
+        if (!a) { console.log('a is falsy') }
+        if (b) { console.log('b') }
+        if (c) { console.log('c') }
+        if (d) { console.log('d') }
+        if (e) { console.log('e') }
+
+      </script>
+    </div>
+  </body>
+</html>

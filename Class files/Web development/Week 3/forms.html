@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/form.css" media="all">
+    <title>Forms</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="form">
+          <h2>Registration form</h2>
+          <p>Fields with * are required</p>
+
+          <form method="post" action="#" id="registration" name="registration" novalidate>
+            <input type="text" id="first-name" name="first_name" placeholder="First name *">
+            <input type="text" id="last-name" name="last_name" placeholder="Last name *">
+            <input type="text" id="age" name="age" placeholder="Age *">
+            <input type="email" id="email" name="email" placeholder="Email (name@email.com)">
+            <input type="tel" id="phone" name="phone" placeholder="Phone (123-456-7890) *">
+            <input type="text" id="postal-code" name="postal_code" placeholder="Postal code (A1B 2C3) *">
+            <div class="buttons">
+              <input type="reset" value="Clear">
+              <input type="button" value="Submit" onclick="validate();">
+            </div>
+          </form>
+        </div>
+      </div>
+      <br><br><br><br><br>
+    </main>
+    <script>
+      function validate() {
+        var form = document.getElementById("registration");
+        var firstName = document.getElementById("first-name").value.trim();
+        var lastName = document.getElementById("last-name").value.trim();
+        var age = document.getElementById("age").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+        var postalCode = document.getElementById("postal-code").value.trim();
+
+        var message = '';
+        var valid = true;
+        var count = 0;
+
+        if (firstName == '') {
+          message += 'First name is required\n';
+          valid = false;
+          count++;
+        }
+
+        if (lastName == '') {
+          message += 'Last name is required\n';
+          valid = false;
+          count++;
+        }
+
+        if (age == '') {
+          message += 'Age is required\n';
+          valid = false;
+          count++;
+        } else {
+          // Convert 'age' to a number
+          var ageInt = parseInt(age);
+          if (isNaN(age) || (ageInt < 16 || ageInt > 120)) {
+            message += "Invalid age\n";
+            valid = false;
+          }
+        }
+
+        if (email == '') {
+          message += 'Email is required\n';
+          valid = false;
+          count++;
+        }
+
+        if (phone == '') {
+          message += 'Phone is required\n';
+          valid = false;
+          count++;
+        }
+
+        if (postalCode == '') {
+          message += 'Postal code is required\n';
+          valid = false;
+          count++;
+        } else if (postalCode.length < 6 || postalCode.length > 6 || postalCode.includes(' ')) {
+          message += 'Postal code must have 6 characters and no spaces\n';
+          valid = false;
+        }
+
+        if (count === 6) {
+          alert("Fields with * are required\n");
+        } else if (!valid) {
+          alert(message);
+        } else {
+          form.submit();
+        }
+      }
+    </script>
+  </body>
+</html>

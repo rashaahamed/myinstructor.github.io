@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/base.css">
+    <link rel="stylesheet" href="assets/inputs.css">
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <h2>Celsius to Fahrenheit</h2>
+
+        <input type="text" id="celsius" name="celsius" placeholder="Celsius">
+        <input type="button" value="Convert" onclick="toFahrenheit()">
+
+        <div class="result">
+          <p id="result">Result</p>
+        </div>
+      </main>
+
+      <script>
+        function toFahrenheit() {
+          var input = document.getElementById("celsius").value.trim();
+          var insert = document.getElementById("result");
+
+          var num = parseFloat(input);
+          var result = num * 1.8 + 32;
+
+          insert.innerHTML = '<strong>' + input + 'C</strong> is equal <strong>' + result + 'F</strong>';
+        }
+      </script>
+    </div>
+  </body>
+</html>

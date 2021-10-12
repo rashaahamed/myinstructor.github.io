@@ -1,0 +1,33 @@
+* {
+  font-family: lato, arial, sans-serif;
+}
+
+h1 {
+   color: #007fff;
+   font-size: 24px;"
+}
+
+h2 {
+   color: #ff2052;
+}
+
+.black {
+  color: pink !important;
+}
+
+.black {
+  color: #000;
+}
+
+.orange {
+  color: #f90;
+}
+
+.green {
+  color: #0f0;
+}
+
+#link {
+  color: blue;
+  font-weight: 700;
+}

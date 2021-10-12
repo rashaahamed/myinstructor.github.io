@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/changeCSS.css">
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Changing CSS with JavaScript</h2>
+
+      <div class="flex">
+        <div id="box-1"></div>
+        <div id="box-2"></div>
+        <div id="box-3"></div>
+      </div>
+
+      <div class="buttons">
+        <input type="button" value="Red" onclick="toRed()">
+        <input type="button" value="Green" onclick="toGreen()">
+        <input type="button" value="Blue" onclick="toBlue()">
+      </div>
+    </div>
+
+    <script>
+      const $boxOne = document.getElementById("box-1");
+      const $boxTwo = document.getElementById("box-2");
+      const $boxThree = document.getElementById("box-3");
+
+      // Functions
+      function toRed() {
+        $boxOne.style.backgroundColor = "#e54c02";
+      }
+
+      function toGreen() {
+        $boxTwo.style.backgroundColor = "#02e5be";
+      }
+
+      function toBlue() {
+        $boxThree.style.backgroundColor = "#029be5";
+      }
+    </script>
+  </body>
+</html>

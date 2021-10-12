@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* Charset must be the first line in your CSS file */
+/* This is a CSS comment */
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+/*  Reset style                              */
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+/* Preventing the browser from using its own rules - 'zeroing' the basics styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: "Nunito sans", sans-serif;
+}
+
+header {
+  height: 56px;
+  background-color: #00945f;
+  padding-left: 50px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 56px;
+}
+
+.box {
+  margin: 50px;
+  background-color: #f90;
+  height: 160px;
+  width: 160px;
+}
+
+.box p {
+  line-height: 160px;
+  text-align: center;
+}
+
+.unordered-list, .ordered-list {
+  margin-left: 50px;
+}
+
+.ordered-list {
+  margin-top: 40px;
+}
+
+.navigation {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 56px;
+  cursor: default;
+}
+
+nav ul li a {
+  font-size: 17px;
+  color: #000;
+  font-size: 600;
+  text-decoration: none;
+  letter-spacing: .2px;
+  cursor: pointer;
+}
+
+/* Pseudo-class */
+nav ul li a:hover {
+  color: #00945f;
+}
+
+/* Selects the first <li> element that is placed immediately after another <li> */
+nav ul li + li {
+  margin-left: 25px;
+}

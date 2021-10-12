@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/base.css">
+    <title>JavaScript</title>
+    <style>
+      * { font-family: "Nunito Sans", sans-serif; }
+      h2 {
+        margin-top: 60px;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      p { margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Check your console logs to see the results</h2>
+      <p>Right-click -> "Inspect" -> "Console"
+    </div>
+
+    <script>
+      // My variables
+      var email, at, dot, name;
+      var valid = false;
+
+      do {
+        email = prompt('Please enter your email').trim();
+        at = email.indexOf('@');
+        dot = email.indexOf('.');
+        name = email.substring(0, at);
+
+        if (at >= 0 && dot >= 0) {
+          alert(
+            "The @ symbol is at position " + at + "\n" +
+            "The . character is at position " + dot + "\n" +
+            "Your user name is " + name + "\n" +
+            "Your email ( " + email + ") is valid"
+          );
+          valid = true;
+        } else {
+          alert("Your email is not valid");
+        }
+      } while (!valid); // not valid => not true
+    </script>
+  </body>
+</html>

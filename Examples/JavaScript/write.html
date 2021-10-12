@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/base.css" media="all">
+    <title>Web development | JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
+    <style type="text/css">
+      * { font-family: 'Nunito Sans', sans-serif; }
+      h2 { margin-top: 60px; }
+      /* :first-child doesn't work with 'p' */
+      p { font-size: 18px; }
+      p:first-of-type { margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container flexbox">
+        <div class="title">
+          <h1>JavaScript</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://github.com/myinstructor" target="_blank">GitHub</a></li>
+            <li><a href="https://gitlab.com/andrespecht" target="_blank">GitLab</a></li>
+            <li><a href="https://andrespecht.com/" target="_blank">About me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <script>
+        var heading = "<h2>JavaScript</h2>";
+        var firstLine = "<p><strong>JavaScript</strong> is an important part of Web Development<p>";
+        var secondLine = "<p>It is an easy to use, <em>cross browser</em> programming language</p>"
+        // The document object represents your web page
+        // If you want to access any element in an HTML page, you always
+        // start with accessing the document object
+        document.write(heading + firstLine + secondLine);
+      </script>
+    </div>
+  </body>
+</html>

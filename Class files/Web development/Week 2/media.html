@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="refresh" content="0; url=http://andrespecht.com/"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/media.css" media="all">
+    <title>Media</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="container flex">
+          <div class="title">
+            <h1>Web Development</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="https://www.amazon.ca/" target="_blank">Amazon</a></li>
+              <li><a href="https://www.bestbuy.ca/" target="_blank">Bestbuy</a></li>
+              <li><a href="https://www.walmart.ca/" target="_blank">Walmart</a></li>
+              <li><a href="https://www.andrespecht.com/" target="_blank">My website</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+        <div class="img">
+          <h2>Image</h2>
+          <!-- Image -->
+          <figure>
+            <!-- Two main formats: jpg/jpeg and png -->
+            <img src="assets/laptop.jpg" alt="Jurassic Park film logo" title="Jurassic Park film logo">
+          </figure>
+        </div>
+
+        <div class="video">
+          <h2>Video</h2>
+          <!-- Video -->
+          <!-- controls is an important HTLM5 attribute -->
+          <video controls>
+            <source src="assets/bunny.ogg" type="video/ogg">
+            <source src="assets/bunny.webm" type="video/webm">
+            Your browser does not support the video tag
+          </video>
+        </div>
+
+        <div class="audio">
+          <h2>Audio</h2>
+          <!-- Audio -->
+          <audio controls>
+            <source src="assets/music.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+
+        <!--
+          iframe: an inline frame is used to embed another document within
+          the HTML document
+        -->
+        <div class="youtube">
+          <h2>YouTube video (using &lt;iframe&gt;)</h2>
+          <iframe width="70%" height="315" src="https://www.youtube.com/embed/W_TSvENWQDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <br><br><br><br><br>
+    </main>
+  </body>
+</html>
