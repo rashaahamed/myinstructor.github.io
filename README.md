@@ -43,4 +43,4 @@
 
 ### My web page
 
-- [It fundamentals](myinstructor.github.io/Courses/intro_to_it.html)
+- [It fundamentals](https://myinstructor.github.io/Courses/intro_to_it.html)
