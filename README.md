@@ -41,6 +41,6 @@
 - [JavaScript cookbook: programming the web](https://www.amazon.ca/JavaScript-Cookbook-Programming-Adam-Scott/dp/1492055751/ref=sr_1_2?crid=2L0E4BXWSQSBI&dchild=1&keywords=javascript+cookbook&qid=1630017446&sprefix=javascript+cook%2Caps%2C216&sr=8-2)
 
 
-### My web page
+### Example of web page
 
 - [It fundamentals](https://myinstructor.github.io/Courses/intro_to_it.html)
