@@ -10,5 +10,12 @@ public class Split {
     System.out.println(arr[1]);
     System.out.println(arr[2]);
     System.out.println(arr[3]);
+
+    String phoneNumber = "204-123-4567";
+    String[] array = phoneNumber.split("-");
+
+    for (String a : array) {
+        System.out.println(a);
+    }
   }
 }
