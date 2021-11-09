@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Nav                                     */
+/* - - - - - - - - - - - - - - - - - - - - */
+
+nav {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  cursor: default;
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: #444;
+  font-family: "Nunito Sans", Lato, Arial, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Pseudoclass */
+nav ul li a:hover {
+  color: #0062c4;
+}
+
+/* Selects the <li> element that is placed after another <li> */
+nav ul li + li {
+  margin-left: 20px;
+}
