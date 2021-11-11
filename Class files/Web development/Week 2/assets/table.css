@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
 
-/* - - - - - - - - - - - - - - - - - - - - */
-/* Reset                                   */
-/* - - - - - - - - - - - - - - - - - - - - */
-
-/* Preventing the browser from using its own rules - 'zeroing' the styles */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Reset                                             */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 * {
   margin: 0;
@@ -19,7 +17,6 @@
 }
 
 
-
 /* - - - - - - - - - - - - - - - - - - - - */
 /* Container                               */
 /* - - - - - - - - - - - - - - - - - - - - */
@@ -29,11 +26,6 @@
   max-width: 1080px;
   margin: 0 auto;
 }
-
-.media-container {
-  width: 700px;
-}
-
 
 
 /* - - - - - - - - - - - - - - - - - - - - */
@@ -97,20 +89,26 @@ nav ul li + li {
 }
 
 
-
 /* - - - - - - - - - - - - - - - - - - - - */
-/* Media                                   */
+/* Table                                   */
 /* - - - - - - - - - - - - - - - - - - - - */
 
-h2 {
-  margin-top: 50px;
+table {
+  width: 500px;
+  margin-top: 20px;
+  border: 1px solid #444;
 }
 
-figure, video, audio, iframe {
-  width: 100%;
-  margin-top: 15px;
+table th {
+  background-color: #00945f;
+  color: #fff;
 }
 
-img {
-  width: 100%;
+table td {
+  border: 1px solid #444;
+  text-align: center;
+}
+
+table th, table td {
+  padding: 10px 0;
 }
