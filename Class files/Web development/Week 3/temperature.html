@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/inputs.css" media="all">
+    <title>Temperature</title>
+  </head>
+  <body>
+      <div class="container">
+        <main>
+          <h2>Celsius to Fahrenheit</h2>
+
+          <input type="text" id="celsius" placeholder="Celsius (ex. 15)">
+          <input type="button" value="Convert" onclick="toFahrenheit();">
+
+          <div class="result">
+            <p id="result">Result</p>
+          </div>
+        </main>
+      </div>
+    <script>
+      // Function
+      function toFahrenheit() {
+        const input = document.getElementById("celsius").value.trim();
+        const insert = document.getElementById("result");
+
+        let num = parseFloat(input); // 22.5
+        let result = num * 1.8 + 32;
+
+        if (input == "") {
+          insert.innerHTML = "Please, enter a number";
+        } else {
+          if (isNaN(input)) {
+            insert.innerHTML = "Input must be a valid number";
+          } else {
+              insert.innerHTML = "<strong>" + input + "&#8451;</strong> is <strong>"
+              + result + "&#8457;</strong>";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

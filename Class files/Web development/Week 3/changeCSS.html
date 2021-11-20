@@ -18,15 +18,29 @@
         </div>
 
         <div class="buttons">
-          <input type="button" value="Red" onclick="">
-          <input type="button" value="Green" onclick="">
-          <input type="button" value="Blue" onclick="">
+          <input type="button" value="Red" onclick="toRed();">
+          <input type="button" value="Green" onclick="toGreen();">
+          <input type="button" value="Blue" onclick="toBlue();">
         </div>
       </div>
 
     </main>
     <script>
+      const boxOne = document.getElementById("box-1");
+      const boxTwo = document.getElementById("box-2");
+      const boxThree = document.getElementById("box-3");
 
+      function toRed() {
+        boxOne.style.backgroundColor = '#e54c02';
+      }
+
+      function toGreen() {
+        boxTwo.style.backgroundColor = '#02e5be';
+      }
+
+      function toBlue() {
+        boxThree.style.backgroundColor = '#029be5';
+      }
     </script>
   </body>
 </html>
