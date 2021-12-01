@@ -6,7 +6,7 @@
  */
 
 // PascalCase -> classes and constructors
-// camelCase -> methods, variables
+// camelCase -> methods, variables, constants
 
 public class Identifier {
   public static void main(String[] arg) {
