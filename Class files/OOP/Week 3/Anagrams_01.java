@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Anagrams {
+public class Anagrams_01 {
   String keyWord;
   final String[] words = {
     "part", "prat", "pearl", "rapt", "raptor", "tarp",
@@ -35,6 +35,6 @@ public class Anagrams {
 
   public static void main(String[] args) {
     String word = "prat";
-    new Anagrams().getAnagrams(word);
+    new Anagrams_01().getAnagrams(word);
   }
 }
