@@ -1,1 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+article {
+  padding: 50px;
+  background-color: yellow;
+}
+
+p {
+  font-size: 20px;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.medium {
+  font-size: 20px;
+}
+
+.big {
+  font-size: 24px;
+}
+
+article .blue {
+  color: blue;
+}
+
+article .green {
+  margin-top: 40px;
+  color: green;
+}
+
+article .red {
+  margin-top: 40px;
+  color: red;
+}
