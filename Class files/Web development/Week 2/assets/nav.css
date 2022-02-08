@@ -1,41 +1,46 @@
-@charset "UTF-8";
+@charset "utf-8";
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - */
 /* Nav                                     */
 /* - - - - - - - - - - - - - - - - - - - - */
 
 nav {
-  margin-top: 50px;
-  margin-left: 50px;
+  height: 55px;
+  margin-top: 40px;
+  background-color: rgb(0, 127, 255);
   font-size: 0;
 }
 
 nav ul {
+  /* Remove the bullets */
   list-style: none;
+  text-align: center;
+  line-height: 55px;
 }
 
 nav ul li {
   display: inline;
-  cursor: default;
 }
 
 nav ul li a {
-  font-size: 18px;
-  color: #444;
-  font-family: "Nunito Sans", Lato, Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  transition: all .3s ease-in-out;
+  letter-spacing: .4px;
   cursor: pointer;
 }
 
-/* Pseudoclass */
 nav ul li a:hover {
-  color: #0062c4;
+  text-decoration: underline;
 }
 
-/* Selects the <li> element that is placed after another <li> */
 nav ul li + li {
-  margin-left: 20px;
+  /* Apply style to every 'li' that comes after another 'li' */
+  margin-left: 25px;
 }
