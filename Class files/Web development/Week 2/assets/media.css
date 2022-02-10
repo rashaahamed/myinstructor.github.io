@@ -1,116 +1,82 @@
-@charset "UTF-8";
+@import "base.css";
 
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* Reset                                   */
-/* - - - - - - - - - - - - - - - - - - - - */
-
-/* Preventing the browser from using its own rules - 'zeroing' the styles */
-
-* {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  outline: 0;
-  box-shadow: none;
-  box-sizing: border-box;
-  vertical-align: baseline;
-  font-family: "Nunito Sans", Lato, Arial, sans-serif;
-}
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* Container                               */
-/* - - - - - - - - - - - - - - - - - - - - */
-
-.container {
-  width: 90%;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.media-container {
-  width: 700px;
-}
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* Header                                  */
-/* - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* Header                                    */
+/* - - - - - - - - - - - - - - - - - - - - - */
 
 header {
+  min-width: 100%;
   background-color: #00945f;
 }
 
-header .flexbox {
-  display: flex;
-  justify-content: space-between;
-}
-
-header .title {
+.title {
+  width: 20%;
   height: 56px;
 }
 
-header h1 {
-  font-size: 20px;
-  line-height: 56px;
-  font-weight: 400;
-  color: #fff;
+.title h1 {
+  font-size: 22px;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: .4px;
+  line-height: 56px;
+  color: #fff;
 }
 
 nav {
+  width: 80%;
   height: 56px;
-  font-size: 0;
 }
 
 nav ul {
   list-style: none;
+  text-align: right;
 }
 
 nav ul li {
   display: inline;
   line-height: 56px;
-  cursor: default;
 }
 
 nav ul li a {
   font-size: 18px;
   color: #fff;
-  font-family: "Nunito Sans", Lato, Arial, sans-serif;
-  font-weight: 600;
   text-decoration: none;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
 }
 
-/* Pseudoclass */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Selects the <li> element that is placed after another <li> */
 nav ul li + li {
-  margin-left: 20px;
+  margin-left: 15px;
+}
+
+nav ul li:last-child a {
+  padding: 6px 25px;
+  background-color: #fff;
+  color: #00945f;
+  border-radius: 50px;
+  text-decoration: none;
 }
 
 
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* Media                                     */
+/* - - - - - - - - - - - - - - - - - - - - - */
 
-/* - - - - - - - - - - - - - - - - - - - - */
-/* Media                                   */
-/* - - - - - - - - - - - - - - - - - - - - */
+.media-container {
+  width: 600px;
+}
 
 h2 {
   margin-top: 50px;
 }
 
-figure, video, audio, iframe {
-  width: 100%;
-  margin-top: 15px;
+figure {
+  margin-top: 10px;
 }
 
-img {
+figure img {
   width: 100%;
 }
