@@ -73,10 +73,14 @@ h2 {
   margin-top: 50px;
 }
 
-figure {
+figure, video, audio, iframe {
   margin-top: 10px;
 }
 
 figure img {
+  width: 100%;
+}
+
+figure img, video, audio {
   width: 100%;
 }

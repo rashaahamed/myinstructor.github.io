@@ -1,76 +1,84 @@
-@charset "UTF-8";
+@import "base.css";
 
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* Header                                    */
+/* - - - - - - - - - - - - - - - - - - - - - */
 
-/* - - - - - - - - - - - - - - - - - - - - */
-/* Reset                                   */
-/* - - - - - - - - - - - - - - - - - - - - */
-
-/* Preventing the browser from using its own rules - 'zeroing' the styles */
-
-* {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  outline: 0;
-  box-shadow: none;
-  box-sizing: border-box;
-  vertical-align: baseline;
-  font-family: "Nunito Sans", Lato, Arial, sans-serif;
+header {
+  min-width: 100%;
+  background-color: #00945f;
 }
 
-
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* Container                               */
-/* - - - - - - - - - - - - - - - - - - - - */
-
-.container {
-  width: 90%;
-  max-width: 1080px;
-  margin: 0 auto;
+.title {
+  width: 20%;
+  height: 56px;
 }
 
-.media-container {
-  width: 700px;
+.title h1 {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  line-height: 56px;
+  color: #fff;
 }
 
-
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* Fixed background                        */
-/* - - - - - - - - - - - - - - - - - - - - */
-
-h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 500;
+nav {
+  width: 80%;
+  height: 56px;
 }
 
-p {
-  margin-top: 10px;
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 56px;
+}
+
+nav ul li a {
   font-size: 18px;
-  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
 }
 
-/*
-  The forward slash is required syntax for separating background position values
-  and background size values. This is to eliminate misinterpretation of the
-  values specified
-*/
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+}
+
+nav ul li:last-child a {
+  padding: 6px 25px;
+  background-color: #fff;
+  color: #00945f;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* Background                                */
+/* - - - - - - - - - - - - - - - - - - - - - */
 
 body {
-  padding-top: 50px;
-  position: relative;
-  background: #fff url("desert.jpg") center center / cover no-repeat fixed;
+  background: #fff url('desert.jpg') center center / cover no-repeat fixed;
 }
 
-body::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, .3);
-  content: " ";
-  z-index: -1;
+article {
+  margin-top: 50px;
+}
+
+article h2 {
+  margin-top: 20px;
+}
+
+article p {
+  margin-top: 12px;
+  line-height: 1.5;
+  font-size: 18px;
 }
