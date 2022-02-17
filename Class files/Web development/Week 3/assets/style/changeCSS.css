@@ -20,13 +20,16 @@
   margin: 0 auto;
 }
 
+h2 {
+  margin-top: 50px;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - */
 /* Boxes                                   */
 /* - - - - - - - - - - - - - - - - - - - - */
 
 .flex {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
 }
 
