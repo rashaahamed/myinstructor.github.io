@@ -4,15 +4,18 @@
 
 const myInput = document.getElementById('input');
 const action = document.getElementById('action');
+const output = document.getElementById('output');
 
 function greetings() {
   let name = myInput.value.trim();
+
   if (name.length > 0) {
-      alert(`Welcome, ${name}`);
+      output.innerText = `Welcome, ${name}`;
   } else {
-    alert('Please, enter your name');
-    myInput.value = '';
+    output.innerText = 'Please, enter your name';
   }
+
+  myInput.value = '';
 }
 
 action.addEventListener('click', function() {

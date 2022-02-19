@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/form.css" media="all">
+    <script src="assets/script/validation.js" defer></script>
+    <title>Template</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h2>Registration form</h2>
+        <p>Fields with * are required</p>
+
+        <form method="post" action="#" id="registration" novalidate>
+          <input type="text" id="first-name" placeholder="First name *">
+          <input type="text" id="last-name" placeholder="Last name *">
+          <input type="text" id="age" placeholder="Age *" maxlength="3">
+          <input type="email" id="email" placeholder="Email *">
+          <div class="buttons">
+            <input type="reset" value="Clear">
+            <input type="button" id="send" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
